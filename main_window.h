@@ -2,6 +2,7 @@
 #define MAIN_WINDOW_H
 
 #include <QMainWindow>
+#include <QHBoxLayout>
 
 class MainWindow : public QMainWindow
 {
@@ -10,6 +11,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = 0);
 
+private:
+    QWidget *mainWidget;
+    QHBoxLayout *mainLayout;
 };
 
 #endif
