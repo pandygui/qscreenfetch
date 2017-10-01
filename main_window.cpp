@@ -7,6 +7,6 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout = new QHBoxLayout;
     
     mainWidget->setLayout(mainLayout);
-    
+ 
     setCentralWidget(mainWidget);
 }
