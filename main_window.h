@@ -14,6 +14,8 @@ public:
 private:
     QWidget *mainWidget;
     QHBoxLayout *mainLayout;
+    QVBoxLayout *leftLayout;
+    QVBoxLayout *rightLayout;
 };
 
 #endif
