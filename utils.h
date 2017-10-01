@@ -12,3 +12,5 @@ public:
     
     static QString getQssContent(const QString &path);
 };
+
+#endif
