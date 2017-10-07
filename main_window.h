@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QHBoxLayout>
+#include <QLabel>
 
 class MainWindow : public QMainWindow
 {
@@ -16,6 +17,20 @@ private:
     QHBoxLayout *mainLayout;
     QVBoxLayout *leftLayout;
     QVBoxLayout *rightLayout;
+
+    QLabel *userLabel;
+    QLabel *osLabel;
+    QLabel *kernelLabel;
+    QLabel *uptimeLabel;
+    QLabel *packagesLabel;
+    QLabel *shellLabel;
+    QLabel *resolutionLabel;
+    QLabel *wmLabel;
+    QLabel *wmThemeLabel;
+    QLabel *gtkThemeLabel;
+    QLabel *iconThemeLabel;
+    QLabel *cpuLabel;
+    QLabel *ramLabel;
 };
 
 #endif
