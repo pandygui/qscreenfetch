@@ -1,4 +1,5 @@
 #include "main_window.h"
+#include "utils.h"
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent)
@@ -41,4 +42,12 @@ MainWindow::MainWindow(QWidget *parent)
     
     mainWidget->setLayout(mainLayout);
     setCentralWidget(mainWidget);
+
+    loadData();
+}
+
+void MainWindow::loadData()
+{
+    userLabel->setText(Utils::getUserName());
+    osLabel->setText(Utils::getOsInfo());
 }

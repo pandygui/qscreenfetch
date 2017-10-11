@@ -31,6 +31,8 @@ private:
     QLabel *iconThemeLabel;
     QLabel *cpuLabel;
     QLabel *ramLabel;
+
+    void loadData();
 };
 
 #endif
