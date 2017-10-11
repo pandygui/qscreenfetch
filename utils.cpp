@@ -16,3 +16,13 @@ QString Utils::getQssContent(const QString &path)
     
     return qss;
 }
+
+QString Utils::getUserName()
+{
+    QString name = qgetenv("USER");
+
+    if (name.isEmpty())
+        name = qgetenv("USERNAME");
+
+    return name;
+}
