@@ -49,5 +49,6 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::loadData()
 {
     userLabel->setText(Utils::getUserName());
-    osLabel->setText(Utils::getOsInfo());
+    osLabel->setText("OS: " + Utils::getOsInfo());
+    kernelLabel->setText("Kernel: " + Utils::getKernel());
 }

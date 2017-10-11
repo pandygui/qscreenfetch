@@ -49,3 +49,8 @@ QString Utils::getOsInfo()
 
     return file.value("DISTRIB_DESCRIPTION").toString() + file.value("DISTRIB_CODENAME").toString();
 }
+
+QString Utils::getKernel()
+{
+    return QSysInfo::kernelVersion();
+}

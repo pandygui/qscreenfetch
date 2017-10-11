@@ -13,6 +13,7 @@ public:
     static QString getQssContent(const QString &path);
     static QString getUserName();
     static QString getOsInfo();
+    static QString getKernel();
 };
 
 #endif
